@@ -15,7 +15,6 @@ public class Digits
             digitList.set(0, foo % 10);
             foo = foo / 10;
         }
-        digitList.add(foo);
 	}
 
 	public boolean isStrictlyIncreasing()
