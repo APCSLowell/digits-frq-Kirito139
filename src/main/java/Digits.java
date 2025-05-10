@@ -7,11 +7,12 @@ public class Digits
 
 	public Digits(int num)
 	{ /* to be implemented in part (a) */ 
-	    while (num / 10 != 0) {
-            digitList.set(0, num % 10);
-            num = num / 10;
+        int foo = num;
+	    while (foo / 10 != 0) {
+            digitList.set(0, foo % 10);
+            foo = foo / 10;
         }
-        digitList.add(num);
+        digitList.add(foo);
 	}
 
 	public boolean isStrictlyIncreasing()
