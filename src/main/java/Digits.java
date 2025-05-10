@@ -22,7 +22,7 @@ public class Digits {
         int last = 0;
 
         for (int digit : digitList) {
-            if (digit < last) return false;
+            if (digit <= last) return false;
             last = digit;
         }
 
