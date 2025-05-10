@@ -15,18 +15,17 @@ public class Digits {
             digitList.add(0, foo % 10);
             foo /= 10;
         }
-        digitList.add(0, foo);
     }
 
     public boolean isStrictlyIncreasing() {
-    /* to be implemented in part (b) */
+        /* to be implemented in part (b) */
         int last = 0;
+
         for (int digit : digitList) {
-            if (digit < last) {
-                return false;
-            }
+            if (digit < last) return false;
             last = digit;
         }
+
         return true;
     }
 
